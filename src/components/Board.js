@@ -7,10 +7,40 @@ import "./Board.css"
     
     const[squares,setSquares] = useState(Array(9).fill(null))           // 변수이름 getter와  state를 정하는 함수 setter
     const [xIsNext , setXIsNext] = useState(true)
+    
+    const calculateWinner = (squares) => {
+      const lines = [
+        [0,1,2],
+        [3,4,5],
+        [6,7,8],
+        [0,3,6],
+        [1,4,7],
+        [2,5,8],
+        [0,4,8],
+        [2,4,6]
+      ]
+      for (let i = 0; i < lines.length; i++) {
+        const [a, b, c] = lines[i]
+        if(squares[a] 
+          && squares[a] === squares[b] 
+          && squares[a] === squares[c]) {
+          return squares[a]
+        }
+      } return null
+    }
+    const winner = calculateWinner(squares)
+    let status
+    if(winner) {
+      status = `Winner: ${winner}`
+    } else {
+      status = `Next player ${xIsNext? 'X' : 'O'}`
+    }
 
-    const status = `Next player ${xIsNext ? 'X' : 'O'}`
     const handleClick = (i) => {
       const newSquares = squares.slice()
+      if(calculateWinner(newSquares) || newSquares[i]) {
+        return
+      }
       newSquares[i] = xIsNext ? 'X' : 'O'
       setSquares(newSquares)
       setXIsNext(current => !current)
@@ -23,6 +53,8 @@ import "./Board.css"
             />
             )
     }
+
+    
   
     return (
       <div>
