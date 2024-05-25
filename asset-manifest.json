@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/seung365/react-tictactoe-app/static/css/main.9a851774.css",
-    "main.js": "/seung365/react-tictactoe-app/static/js/main.d1155a69.js",
-    "static/js/453.ad0e490e.chunk.js": "/seung365/react-tictactoe-app/static/js/453.ad0e490e.chunk.js",
-    "index.html": "/seung365/react-tictactoe-app/index.html",
-    "main.9a851774.css.map": "/seung365/react-tictactoe-app/static/css/main.9a851774.css.map",
-    "main.d1155a69.js.map": "/seung365/react-tictactoe-app/static/js/main.d1155a69.js.map",
-    "453.ad0e490e.chunk.js.map": "/seung365/react-tictactoe-app/static/js/453.ad0e490e.chunk.js.map"
+    "main.css": "/react-tictactoe-app/static/css/main.9a851774.css",
+    "main.js": "/react-tictactoe-app/static/js/main.a49a8c5c.js",
+    "static/js/453.ad0e490e.chunk.js": "/react-tictactoe-app/static/js/453.ad0e490e.chunk.js",
+    "index.html": "/react-tictactoe-app/index.html",
+    "main.9a851774.css.map": "/react-tictactoe-app/static/css/main.9a851774.css.map",
+    "main.a49a8c5c.js.map": "/react-tictactoe-app/static/js/main.a49a8c5c.js.map",
+    "453.ad0e490e.chunk.js.map": "/react-tictactoe-app/static/js/453.ad0e490e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9a851774.css",
-    "static/js/main.d1155a69.js"
+    "static/js/main.a49a8c5c.js"
   ]
 }
